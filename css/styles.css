@@ -76,6 +76,11 @@ a {
 .list {
   display: flex;
 }
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
 /* header */
 
 .header {
@@ -153,9 +158,12 @@ a {
 
 .section-hero {
   background-color: var(--hero-background);
+  padding-top: 188px;
+  padding-bottom: 188px;
 }
 .hero-title {
   width: 494px;
+  margin-bottom: 48px;
   margin-left: auto;
   margin-right: auto;
 
@@ -185,9 +193,6 @@ a {
 .hero-button:focus {
   background-color: var(--pressed-state);
 }
-.section {
-  padding-bottom: 120px;
-}
 .list-classes {
   display: flex;
 }
@@ -205,6 +210,10 @@ a {
 }
 
 /* section WE DOING */
+
+.work-section{
+  padding-top: 0;
+}
 
 .list-work {
   width: calc((100%- (var(--margin-right-img)) * 2) / 3);
@@ -224,8 +233,7 @@ a {
 
 .list-team {
   width: calc((100%- (var(--margin-right-img)) * 2) / 3);
-  padding-bottom: 32px;
-  background: #ffffff;
+    background: #ffffff;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
@@ -234,7 +242,10 @@ a {
   margin-right: var(--margin-right-img);
 }
 .name-team {
-  margin-top: 32px;
+  padding-top: 32px;
+  padding-right: 16px;
+  padding-bottom: 32px;
+  padding-left: 16px;
   text-align: center;
 }
 
@@ -266,7 +277,7 @@ a {
 
 /* portfolio */
 
-.selection {
+.portfolio-section{
   padding-top: 96px;
 }
 
@@ -303,19 +314,15 @@ a {
 .portfolio {
   display: flex;
   flex-wrap: wrap;
-}
-.portfolio .item {
-  width: calc((100%- (var(--margin-right-img)) * 2) / 3);
-  margin-bottom: 48px;
-}
-.portfolio .item:not(:nth-child(3n)) {
-  margin-right: var(--margin-right-img);
+  row-gap: 48px;
+  column-gap: 24px;
 }
 
 .portfolio .name-card {
   padding-top: 32px;
-  padding-left: 16px;
   padding-bottom: 32px;
+  padding-left: 16px;
+  
   border-bottom: 1px solid var(--accent);
   border-right: 1px solid var(--accent);
   border-left: 1px solid var(--accent);
